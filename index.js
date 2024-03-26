@@ -530,7 +530,7 @@ wss.on("connection", (connection, req) => {
 
       const fileBuffer = Buffer.from(fileData, "base64");
 
-      console.log(fileBuffer)
+      // console.log(fileBuffer)
       fs.writeFile(path, fileBuffer , (err) => {
         console.log("file saved:" + path);
         
